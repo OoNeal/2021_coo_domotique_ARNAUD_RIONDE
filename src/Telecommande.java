@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Telecommande {
 
-    private ArrayList<Lampe> lampes;
+    private ArrayList<Lampe> lampes = new ArrayList<Lampe>();
 
     public Telecommande()
     {
