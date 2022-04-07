@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Telecommande {
+public class Telecommande implements Appareil{
 
     private ArrayList<Lampe> lampes = new ArrayList<Lampe>();
 
