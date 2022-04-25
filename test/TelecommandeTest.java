@@ -1,6 +1,8 @@
-import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TelecommandeTest {
 
@@ -89,7 +91,7 @@ public class TelecommandeTest {
 
         String s = t.toString();
 
-        assertEquals("erreur", b, true );
+        Assertions.assertTrue(b, "erreur");
     }
 
 }
