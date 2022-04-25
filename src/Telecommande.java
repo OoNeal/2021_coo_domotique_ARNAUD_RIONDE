@@ -1,10 +1,8 @@
 import java.util.ArrayList;
 
-public class Telecommande implements Appareil{
+public class Telecommande{
 
-    private ArrayList<Lampe> lampes = new ArrayList<Lampe>();
-
-    private ArrayList<Hifi> chainesHifi = new ArrayList<Hifi>();
+    private ArrayList<Appareil> Appareil = new ArrayList<Appareil>();
 
     public Telecommande()
     {
@@ -13,36 +11,36 @@ public class Telecommande implements Appareil{
 
     public void ajouterLampe(Lampe l)
     {
-        lampes.add(l);
+        Appareil.add(l);
     }
 
     public void activerLampe(int indiceLampe)
     {
-        lampes.get(indiceLampe).allumer();
+        Appareil.get(indiceLampe).allumer();
     }
 
     public void desactiverLampe(int indceLampe)
     {
-        lampes.get(indceLampe).eteindre();
+        Appareil.get(indceLampe).eteindre();
     }
 
     public void activerTout()
     {
-        for (Lampe lampe : lampes)
+        for (Appareil Appareil : Appareil)
         {
-            lampe.allumer();
+            Appareil.allumer();
         }
     }
 
     public String toString()
     {
-        String res = "";
-        for (Lampe lampe : lampes)
+        StringBuilder res = new StringBuilder();
+        for (Appareil Appareil : Appareil)
         {
-            res += lampe.toString();
-            res += "\n";
+            res.append(Appareil.toString());
+            res.append("\n");
         }
-        return res;
+        return res.toString();
     }
 
 
