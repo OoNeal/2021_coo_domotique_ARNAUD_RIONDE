@@ -4,6 +4,8 @@ public class Telecommande {
 
     private ArrayList<Lampe> lampes = new ArrayList<Lampe>();
 
+    private ArrayList<Hifi> chainesHifi = new ArrayList<Hifi>();
+
     public Telecommande()
     {
 
