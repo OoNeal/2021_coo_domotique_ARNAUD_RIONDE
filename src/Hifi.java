@@ -1,7 +1,7 @@
 /**
  * classe qui represente une chaine hifi
  */
-class Hifi {
+class Hifi implements Appareil {
 
 	/**
 	 * l'intensite du son de la chaine on suppose que la chaine est eteinte si
