@@ -9,19 +9,19 @@ public class Telecommande{
 
     }
 
-    public void ajouterLampe(Lampe l)
+    public void ajouterAppareil(Appareil l)
     {
         Appareil.add(l);
     }
 
-    public void activerLampe(int indiceLampe)
+    public void activerAppareil(int indiceAppareil)
     {
-        Appareil.get(indiceLampe).allumer();
+        Appareil.get(indiceAppareil).allumer();
     }
 
-    public void desactiverLampe(int indceLampe)
+    public void desactiverAppareil(int indiceAppareil)
     {
-        Appareil.get(indceLampe).eteindre();
+        Appareil.get(indiceAppareil).eteindre();
     }
 
     public void activerTout()
