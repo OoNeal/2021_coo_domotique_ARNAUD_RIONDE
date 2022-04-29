@@ -94,4 +94,36 @@ public class TelecommandeTest {
         Assertions.assertTrue(b, "erreur");
     }
 
+
+    @Test
+    public void test_ActivationCheminee()
+    {
+        ChemineeAdapter c = new ChemineeAdapter();
+        Telecommande t = new Telecommande();
+
+        t.ajouterAppareil(c);
+
+        t.activerAppareil(0);
+
+        String s = c.toString();
+
+        assertEquals("cheminee: 10", s, "erreur");
+    }
+
+    @Test
+    public void test_DesactivationCheminee()
+    {
+        ChemineeAdapter c = new ChemineeAdapter();
+        Telecommande t = new Telecommande();
+
+        t.ajouterAppareil(c);
+
+        t.activerAppareil(0);
+        t.desactiverAppareil(0);
+
+        String s = c.toString();
+
+        assertEquals("cheminee: 0", s, "erreur");
+    }
+
 }
