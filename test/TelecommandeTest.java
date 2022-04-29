@@ -12,7 +12,7 @@ public class TelecommandeTest {
         Lampe l = new Lampe("l1");
         Telecommande t = new Telecommande();
 
-        t.ajouterLampe(l);
+        t.ajouterAppareil(l);
 
         String s = t.toString();
 
@@ -26,8 +26,8 @@ public class TelecommandeTest {
         Telecommande t = new Telecommande();
         Lampe l2 = new Lampe("l2");
 
-        t.ajouterLampe(l);
-        t.ajouterLampe(l2);
+        t.ajouterAppareil(l);
+        t.ajouterAppareil(l2);
 
         String s = t.toString();
 
@@ -41,10 +41,10 @@ public class TelecommandeTest {
         Telecommande t = new Telecommande();
         Lampe l2 = new Lampe("l2");
 
-        t.ajouterLampe(l);
-        t.ajouterLampe(l2);
+        t.ajouterAppareil(l);
+        t.ajouterAppareil(l2);
 
-        t.activerLampe(0);
+        t.activerAppareil(0);
 
         String s = t.toString();
 
@@ -58,10 +58,10 @@ public class TelecommandeTest {
         Telecommande t = new Telecommande();
         Lampe l2 = new Lampe("l2");
 
-        t.ajouterLampe(l);
-        t.ajouterLampe(l2);
+        t.ajouterAppareil(l);
+        t.ajouterAppareil(l2);
 
-        t.activerLampe(1);
+        t.activerAppareil(1);
 
         String s = t.toString();
 
@@ -75,14 +75,14 @@ public class TelecommandeTest {
         Telecommande t = new Telecommande();
         Lampe l2 = new Lampe("l2");
 
-        t.ajouterLampe(l);
-        t.ajouterLampe(l2);
+        t.ajouterAppareil(l);
+        t.ajouterAppareil(l2);
 
         boolean b = false;
 
         try
         {
-            t.activerLampe(3);
+            t.activerAppareil(3);
         }
         catch (Exception e)
         {
