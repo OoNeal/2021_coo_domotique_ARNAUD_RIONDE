@@ -4,10 +4,7 @@ public class Telecommande{
 
     private ArrayList<Appareil> Appareil = new ArrayList<Appareil>();
 
-    public Telecommande()
-    {
-
-    }
+    public Telecommande() {}
 
     public void ajouterAppareil(Appareil l)
     {
@@ -41,6 +38,10 @@ public class Telecommande{
             res.append("\n");
         }
         return res.toString();
+    }
+
+    public int getNombre(){
+        return Appareil.size();
     }
 
 
