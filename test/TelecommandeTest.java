@@ -16,7 +16,7 @@ public class TelecommandeTest {
 
         String s = t.toString();
 
-        assertEquals("erreur", s, "l1: Off\n");
+        assertEquals("l1: Off\n", s, "erreur");
     }
 
     @Test
@@ -31,7 +31,7 @@ public class TelecommandeTest {
 
         String s = t.toString();
 
-        assertEquals("erreur", s,"l1: Off\nl2: Off\n" );
+        assertEquals("l1: Off\nl2: Off\n", s,"erreur" );
     }
 
     @Test
@@ -48,7 +48,7 @@ public class TelecommandeTest {
 
         String s = t.toString();
 
-        assertEquals("erreur", s, "l1: On\nl2: Off\n");
+        assertEquals("l1: On\nl2: Off\n", s, "erreur");
     }
 
     @Test
@@ -65,7 +65,7 @@ public class TelecommandeTest {
 
         String s = t.toString();
 
-        assertEquals("erreur", s,"l1: Off\nl2: On\n" );
+        assertEquals("l1: Off\nl2: On\n", s,"erreur" );
     }
 
     @Test
